@@ -23,7 +23,7 @@ def summarize_article(article_text):
 
     message = {
         "role": "user",
-        "content": f"Please summarize the following news article content, generate an outline, and highlight key points:\\n\\"{article_text}\\""
+        "content": f"Please summarize the following news article content, generate an outline, and highlight key points:\n\"{article_text}\""
     }
 
     completion = client.chat.completions.create(
